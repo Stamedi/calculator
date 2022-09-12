@@ -1,4 +1,4 @@
-import { useEffect } from 'react';
+// import { useEffect } from 'react';
 import { useState } from 'react';
 import './App.css';
 
@@ -77,31 +77,31 @@ function App() {
     }
   }
 
-  const detectKeyDown = (e) => {
-    console.log(e)
-    e.preventDefault()
-    if (e.charCode >= 48 && e.charCode <= 57) {
-      changeRes(e.key)
-      document.removeEventListener('keypress', detectKeyDown)
-    }
-     else if (e.key === '+') {
-      setTask('+')
-      document.removeEventListener('keypress', detectKeyDown)
-    }
-     else if (e.key === '=' || e.key === 'Enter') {
-      finalRes()
-      document.removeEventListener('keypress', detectKeyDown)
-    } 
-    else if (e.key === 'Backspace') {
-      resetBtn()
-      document.removeEventListener('keypress', detectKeyDown)
-    }
-  }
+  // const detectKeyDown = (e) => {
+  //   console.log(e)
+  //   e.preventDefault()
+  //   if (e.charCode >= 48 && e.charCode <= 57) {
+  //     changeRes(e.key)
+  //     document.removeEventListener('keypress', detectKeyDown)
+  //   }
+  //    else if (e.key === '+') {
+  //     setTask('+')
+  //     document.removeEventListener('keypress', detectKeyDown)
+  //   }
+  //    else if (e.key === '=' || e.key === 'Enter') {
+  //     finalRes()
+  //     document.removeEventListener('keypress', detectKeyDown)
+  //   } 
+  //   else if (e.key === 'Backspace') {
+  //     resetBtn()
+  //     document.removeEventListener('keypress', detectKeyDown)
+  //   }
+  // }
 
-  useEffect(() => {
-    document.addEventListener('keypress', detectKeyDown)
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [result, number2, task])
+  // useEffect(() => {
+  //   document.addEventListener('keypress', detectKeyDown)
+  //   // eslint-disable-next-line react-hooks/exhaustive-deps
+  // }, [result, number2, task])
   
 
   return (
