@@ -18,20 +18,15 @@ h1 {
   font-size: 40px;
   color: white;
   font-weight: bold;
-  /* padding-top: 20px; */
   padding-bottom: 25px;
-  /* background-color: rgb(207, 170, 119); */
 }
 
 .buttons-grid {
   display: grid;
   justify-content: center;
   background: rgb(169, 132, 100);
-  /* border: 5px solid rgb(207, 170, 119); */
   padding: 20px 40px;
   border-radius: 20px;
-  /* width: 300px; */
-  /* height: ; */
 }
 
 .row-1,
@@ -41,7 +36,6 @@ h1 {
 .row-5 {
   display: grid;
   justify-content: center;
-  /* width: 400px; */
   margin-bottom: 15px;
   grid-template-columns: repeat(4, 100px);
   column-gap: 15px;
